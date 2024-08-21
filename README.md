@@ -29,7 +29,7 @@ Tic-Tac-Toe is a simple yet addictive game where two players take turns marking 
 
 ## Deployment
 
-This project is deployed to Azure. You can access the live version [here](https://jolly-flower-007158d03.5.azurestaticapps.net).
+This project is deployed to Azure. You can access the live version [here](https://jolly-flower-007158d03.5.azurestaticapps.net) or use [gitHubPages](https://baitoshoo.github.io/Tic-Tac-Toe/).
 
 ## License
 
