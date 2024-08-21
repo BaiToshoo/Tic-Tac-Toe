@@ -1,0 +1,89 @@
+h1 {
+    color: red;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+}
+
+.cell:hover {
+    background-color: #f0f0f0;
+    transition : 0.75s;
+}
+
+#b1{ 
+    border-bottom: 1px solid gray; 
+    border-right: 1px solid gray; 
+} 
+  
+#b2 { 
+    border-bottom: 1px solid gray; 
+    border-right: 1px solid gray; 
+    border-left: 1px solid gray; 
+} 
+  
+#b3 { 
+    border-bottom: 1px solid gray; 
+    border-left: 1px solid gray; 
+} 
+  
+#b4 { 
+    border-top: 1px solid gray; 
+    border-bottom: 1px solid gray; 
+    border-right: 1px solid gray; 
+} 
+      
+#b5 { 
+    border: 1px solid gray; 
+} 
+  
+#b6 { 
+    border-top: 1px solid gray; 
+    border-bottom: 1px solid gray; 
+    border-left: 1px solid gray; 
+} 
+  
+#b7 { 
+    border-top: 1px solid gray; 
+    border-right: 1px solid gray; 
+} 
+  
+#b8 { 
+    border-top: 1px solid gray; 
+    border-right: 1px solid gray; 
+    border-left: 1px solid gray; 
+} 
+  
+#b9 { 
+    border-top: 1px solid gray; 
+    border-left: 1px solid gray; 
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    color: red;
+}
+
+#reset-btn {
+    cursor: pointer;
+}
