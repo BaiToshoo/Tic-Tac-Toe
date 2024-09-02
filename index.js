@@ -1,11 +1,11 @@
 window.addEventListener('load', solve);
 
-window.addEventListener('load', solve);
-
 function solve() {
     let player = 1;
     let player1Wins = 0;
     let player2Wins = 0;
+
+    const jsConfetti = new JSConfetti()
 
     const print = document.getElementById('print');
     const player1Score = document.getElementById('player1-score');
@@ -127,6 +127,13 @@ function solve() {
                 }
                 disableBoxes();
                 updateScoreboard();
+                jsConfetti.addConfetti(
+                    {
+                        emojis: ['🏆', '🔥'],
+                        confettiNumber: 100,
+                        
+                    }
+                );
                 setTimeout(reset, 2000);
                 return;
             }
@@ -138,6 +145,12 @@ function solve() {
         if (b1.textContent !== '' && b2.textContent !== '' && b3.textContent !== '' && b4.textContent !== '' && b5.textContent !== '' && b6.textContent !== '' && b7.textContent !== '' && b8.textContent !== '' && b9.textContent !== '') {
             print.textContent = 'Draw!';
             disableBoxes();
+            jsConfetti.addConfetti(
+                {
+                    emojis: ['🤝', '❌'],
+                    confettiNumber: 100,
+                }
+            );
             setTimeout(reset, 2000);
         }
     }
