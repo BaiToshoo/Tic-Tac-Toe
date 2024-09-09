@@ -3,45 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic-Tac-Toe</title>
+    <title>Tic-Tac-Toe Lobby</title>
     <link rel="stylesheet" href="style.css">
+    <script src="/socket.io/socket.io.js"></script>
     <script src="index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
 </head>
 <body>
     <div class="main">
-        <h1>Tic-Tac-Toe</h1>
-        <div class="game">
-            <div class="row">
-                <div class="cell" id="b1"></div>
-                <div class="cell" id="b2"></div>
-                <div class="cell" id="b3"></div>
-            </div>
-            <div class="row">
-                <div class="cell" id="b4"></div>
-                <div class="cell" id="b5"></div>
-                <div class="cell" id="b6"></div>
-            </div>
-            <div class="row">
-                <div class="cell" id="b7"></div>
-                <div class="cell" id="b8"></div>
-                <div class="cell" id="b9"></div>
-            </div>
+        <h1>Tic-Tac-Toe Lobby</h1>
+        <div class="lobby">
+            <input type="text" id="lobby-id" placeholder="Enter Lobby ID">
+            <button id="join-lobby-btn">Join Lobby</button>
+            <button id="create-lobby-btn">Create Lobby</button>
         </div>
-        <div class="scoreboard">
-            <div class="score player1">
-                <h2>Player 1 (X)</h2>
-                <p id="player1-score">0</p>
-            </div>
-            <div class="score player2">
-                <h2>Player 2 (O)</h2>
-                <p id="player2-score">0</p>
-            </div>
-        </div>
-        <div class="result">
-            <button id="reset-btn">Reset Score</button>
-            <h2 id="print">Player 1 turn (X)</h2>
-        </div>
+        <div id="message"></div>
     </div>
 </body>
 </html>

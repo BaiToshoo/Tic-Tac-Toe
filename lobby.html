@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waiting for Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="lobby.js"></script>
+</head>
+<body>
+    <div class="main">
+        <h1>Waiting for Player</h1>
+        <p>Current players: <span id="player-count">1</span></p>
+        <p>Lobby Id: <span id="lobby-id" data-lobby-id="{{lobbyId}}"></span></p>
+        <p id="message">Waiting for another player to join...</p>
+    </div>
+</body>
+</html>
